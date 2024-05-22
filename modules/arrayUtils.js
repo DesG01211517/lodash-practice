@@ -1,9 +1,9 @@
 const _ = require("lodash");
 
-function chunkArray(array, chunkSize) {
-  return _.chunk(array, chunkSize);
+function chunkArray(array1) {
+  return _.chunk(array1, 2);
 }
-function findUniqueElements(array, findUniqueElements) {
-  return _.findUniqueElements(array, findUniqueElements);
+function findUniqueElements(array2) {
+  return _.uniq(array2);
 }
 module.exports = { chunkArray, findUniqueElements };

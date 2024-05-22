@@ -1,9 +1,9 @@
 const _ = require("lodash");
 
-function deepCloneObject(array, deepCloneObject) {
-  return _.deepClone(array, chunkSize);
+function deepCloneObject(object1) {
+  return _.cloneDeep(object1);
 }
-function mergeObjects(array, mergeObjects) {
-  return _.mergeObjects(array, mergeObjects);
+function mergeObjects(object2, object1) {
+  return _.merge(object2, object1);
 }
 module.exports = { deepCloneObject, mergeObjects };
